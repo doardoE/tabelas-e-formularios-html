@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWEB1 - EDUARDO</title>
+    <style>
+        * {
+            padding: 0.5%;
+        }
+        body {
+            background-color: #f0f8ff;
+            padding: 0% 27%;
+            margin-top: 2%;
+        }
+        h1 {
+            margin-left: 20%;
+        }
+        #nome, #sobrenome {
+            display: inline;
+        }
+        #botao {
+            margin-top: 2%;
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulário de Cadastro</h1>
+    </div>
+    
+    <form action="">
+        <fieldset>
+            <div id="nome">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div id="sobrenome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+            <div id="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div id="senha">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+            <div id="data">
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="clase">
+                <label>Sexo</label><br>
+                <label for="M">
+                    <input type="radio" name="sexo" id="M" value="Masculino"> Masculino
+                </label>
+                <label for="F">
+                    <input type="radio" name="sexo" id="F" value="Feminino"> Feminino
+                </label>
+                <label for="other">
+                    <input type="radio" name="sexo" id="other" value="Outro" checked> Outro
+                </label>
+            </div>
+            <div class="clase">
+                <label for="cidade">Cidade</label>
+                <select name="cidade" id="cidade">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="MCZ">Maceió</option>
+                    <option value="Mal.Deodoro">Marechal Deodoro</option>
+                    <option value="Rio Largo">Rio Largo</option>
+                    <option value="Penedo">Penedo</option>
+                    <option value="Arapiraca">Arapiraca</option>
+                    <option value="São M. dos Campos">São Miguel dos Campos</option>
+                </select>
+            </div>
+            <div class="clase">
+                <label for="prod">Quantidade de Produtos</label>
+                <input type="number" id="prod" name="prod" min="1">
+            </div>
+            <div class="clase">
+                <label>Interesses Pessoais</label><br>
+                <label for="p">
+                    <input type="checkbox" id="p" name="IntPessoal" value="Pintura"> Pintura
+                </label>
+                <label for="music">
+                    <input type="checkbox" id="music" name="IntPessoal" value="Musica"> Música
+                </label>
+                <label for="dance">
+                    <input type="checkbox" id="dance" name="IntPessoal" value="Danca"> Dança
+                </label>
+                <label for="teatro">
+                    <input type="checkbox" id="teatro" name="IntPessoal" value="Teatro"> Teatro
+                </label>
+                <label for="sport">
+                    <input type="checkbox" id="sport" name="IntPessoal" value="Esporte"> Esporte
+                </label>
+                <label for="tec">
+                    <input type="checkbox" id="tec" name="IntPessoal" value="Tecnologia"> Tecnologia
+                </label>
+            </div>
+            <div class="clase">
+                <label for="OBS">Observações Adicionais</label>
+                <textarea id="OBS" name="OBS"></textarea>
+            </div>
+        </fieldset>
+
+        <input id="botao" type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
